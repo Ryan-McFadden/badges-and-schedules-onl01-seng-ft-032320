@@ -3,13 +3,20 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
+  badges = []
   attendees.each do |badge|
    "Here's your badge #{badge}"
   end
+  badges
 end
 
 def assign_rooms(attendees)
+  rooms_array = []
   attendees.each do |rooms|
-    "Hello, #{rooms}! You'll be assigned to room #{rooms.index}"
+    rooms_array << "Hello, #{rooms}! You'll be assigned to room #{attendees.index(rooms)}"
   end
+  rooms_array
+end
+
+def printer(attendees)
 end
