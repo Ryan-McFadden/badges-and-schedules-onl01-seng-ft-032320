@@ -4,16 +4,16 @@ end
 
 def batch_badge_creator(attendees)
   badges = []
-  attendees.each do |badge|
-   "Here's your badge #{badge}"
+  attendees.each do |name|
+   badges << "Here's your badge #{name}"
   end
   badges
 end
 
 def assign_rooms(attendees)
   rooms_array = []
-  attendees.each do |rooms|
-    rooms_array << "Hello, #{rooms}! You'll be assigned to room #{attendees.index(rooms)}"
+  attendees.each do |name|
+    rooms_array << "Hello, #{name}! You'll be assigned to room #{attendees.index(rooms)}"
   end
   rooms_array
 end
